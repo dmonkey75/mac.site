@@ -29,7 +29,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                     <div className='right-content'> 
-                        <img src={profile} alt='michael cajandig - picture'></img>
+                        <img src={profile} alt='michael cajandig'></img>
                     </div>
                 </div>
             </div> 

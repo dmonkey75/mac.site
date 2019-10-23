@@ -1,38 +1,58 @@
-@import url("https://fonts.googleapis.com/css?family=Work Sans|Open Sans&subset=greek");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import "./mobile.scss";
+@import "./portfolio.scss";
 
-$work-sans: "Work Sans", "Open Sans", sans-serif;
+$work-sans: "Open Sans", sans-serif;
+$button-color: #49c65d;
+$white-color: #f5f5f5;
+$main-content-width: 768px;
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #f5f5f5;
+  background: $white-color;
   font-family: $work-sans;
 }
 
 header {
-  height: 2em;
+  position: sticky;
+  top: 0;
+  height: 3em;
   background: #24292e;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10% 0;
-  .logo img {
-    height: 80%;
-    width: 40%;
-  }
+  display: flex; 
+  align-items: center; 
+  .header-container {
+    width: $main-content-width;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    .logo img {
+      height: 80%;
+      width: 40%;
+    }
 
-  nav {
-    a {
-      text-decoration: none;
-      padding: 0 1em 0;
-      color: #49C65D;
+    nav {
+      a,
+      .nav-burger {
+        text-decoration: none;
+        padding: 0 1em 0;
+        color: $white-color;
+      }
+ 
+      a:hover {
+        color: $button-color;
+      }
     }
   }
 }
 
+
+
 .hero {
-  background: #303846;
+  background-image: url("../assets/hero-bg-s.jpg");
+  background-size: cover;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -42,12 +62,12 @@ header {
   h1,
   h2 {
     text-transform: capitalize;
-    color: #f5f5f5;
+    color: $white-color;
   }
 }
 
 .container {
-  width: 80%;
+  width: $main-content-width;
   margin: auto;
   display: flex;
 }
@@ -55,23 +75,24 @@ header {
 .left-content {
   padding-top: 3em;
   width: 50%;
-  .callout { 
-    button { 
-      background: #f5f5f5; 
-      border: .5px solid #49C65D;
+  .callout {
+    button {
+      background: $white-color;
+      border: 0.5px solid $button-color;
       text-transform: uppercase;
       margin-right: 1em;
-      color:#49C65D;  
+      color: $button-color;
       padding: 1em 1em;
     }
 
-    button:hover { 
-      color: #3266CD; 
+    button:hover {
+      color: $white-color;
+      background: $button-color;
     }
   }
   .social-link {
     padding-top: 1em;
-    
+
     a img {
       height: 30px;
       width: 30px;
@@ -87,4 +108,4 @@ header {
     height: 100%;
     width: 80%;
   }
-}
+} 

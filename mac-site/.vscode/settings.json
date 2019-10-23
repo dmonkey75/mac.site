@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/1e2a31c5-f1d6-44ad-ae23-9f0d97097779/resourceGroups/mac-rg-test/providers/Microsoft.Web/sites/mac-web-myport-t-awze",
+    "appService.deploySubpath": ""
+}
