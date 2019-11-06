@@ -11,26 +11,42 @@
         }
       }
       nav {
+        font-size: 2em;
         .nav-items {
           display: none;
         }
 
         .nav-burger {
-          font-size: 2em;
           color: #fff;
           display: block;
+          &:hover {
+            color: $button-color;
+          }
         }
-      }
 
-      nav:hover .nav-items {
-        display: flex;
-        align-items: center;
-        flex-flow: column;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        background-color: #24292e;
-        z-index: 1;
+        // &:hover .nav-items {
+        //   display: flex;
+        //   align-items: center;
+        //   flex-flow: column;
+        //   position: absolute;
+        //   width: 100%;
+        //   left: 0;
+        //   background-color: #24292e;
+        //   z-index: 1;
+        //   height: 100vh;
+        // }
+
+        .nav-items-responsive {
+          display: flex;
+          align-items: center;
+          flex-flow: column;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          background-color: #24292e;
+          z-index: 1;
+          // height: 100vh;
+        }
       }
     }
   }

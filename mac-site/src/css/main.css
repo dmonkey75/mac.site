@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto&display=swap");
 @media only screen and (max-width: 767px) {
   header {
     height: 4em !important;
@@ -11,15 +14,20 @@
     height: 90% !important;
     width: 60% !important;
   }
+  header .header-container nav {
+    font-size: 2em;
+  }
   header .header-container nav .nav-items {
     display: none;
   }
   header .header-container nav .nav-burger {
-    font-size: 2em;
     color: #fff;
     display: block;
   }
-  header .header-container nav:hover .nav-items {
+  header .header-container nav .nav-burger:hover {
+    color: #49c65d;
+  }
+  header .header-container nav .nav-items-responsive {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -162,13 +170,67 @@
   width: 200px;
 }
 
+.resume-hero {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume-hero .resume-circular-image {
+  background: #e6e3ed;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.resume-hero .resume-circular-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info .info-left {
+  width: 25%;
+}
+
+.info .info-right {
+  width: 75%;
+}
+
+.info .info-right .info-head {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.task-list p {
+  display: list-item;
+  list-style-position: inside;
+}
+
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #f5f5f5;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  text-align: justify;
 }
 
 header {
@@ -216,9 +278,9 @@ header .header-container nav a:hover {
 }
 
 .hero {
-  background-image: url("../assets/hero-bg-s.jpg");
+  background: url("../assets/bg-4.jpg") no-repeat center fixed;
   background-size: cover;
-  height: 200px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,9 +303,18 @@ header .header-container nav a:hover {
   color: #f5f5f5;
 }
 
+.hero h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
 .container {
   width: 768px;
   margin: auto;
+}
+
+.main-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

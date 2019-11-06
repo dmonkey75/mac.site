@@ -1,18 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import "./base.scss";
 @import "./mobile.scss";
 @import "./portfolio.scss";
-
-$work-sans: "Open Sans", sans-serif;
-$button-color: #49c65d;
-$white-color: #f5f5f5;
-$main-content-width: 768px;
+@import "./resume.scss";
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background: $white-color;
-  font-family: $work-sans;
+  font-family: $font-main;
+} 
+
+p {
+  text-align: justify;
 }
 
 header {
@@ -20,14 +20,14 @@ header {
   top: 0;
   height: 3em;
   background: #24292e;
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   .header-container {
     width: $main-content-width;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     .logo img {
       height: 80%;
       width: 40%;
@@ -40,7 +40,7 @@ header {
         padding: 0 1em 0;
         color: $white-color;
       }
- 
+
       a:hover {
         color: $button-color;
       }
@@ -48,12 +48,12 @@ header {
   }
 }
 
-
-
 .hero {
-  background-image: url("../assets/hero-bg-s.jpg");
-  background-size: cover;
-  height: 200px;
+  background: url("../assets/bg-4.jpg") no-repeat center fixed;
+  //background-image: url("../assets/ortigas.jpg"); 
+  //background-attachment: fixed; 
+  background-size: cover; 
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -63,12 +63,22 @@ header {
   h2 {
     text-transform: capitalize;
     color: $white-color;
+  };
+  h1 {
+    font-family: $font-lato;
+    font-size: 4rem;
+    font-weight: bolder;
   }
 }
+ 
 
 .container {
   width: $main-content-width;
   margin: auto;
+  //display: flex;
+}
+
+.main-content {
   display: flex;
 }
 
@@ -83,11 +93,10 @@ header {
       margin-right: 1em;
       color: $button-color;
       padding: 1em 1em;
-    }
-
-    button:hover {
-      color: $white-color;
-      background: $button-color;
+      &:hover {
+        color: $white-color;
+        background: $button-color;
+      }
     }
   }
   .social-link {
@@ -108,4 +117,4 @@ header {
     height: 100%;
     width: 80%;
   }
-} 
+}

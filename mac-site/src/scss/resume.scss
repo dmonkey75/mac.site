@@ -1,0 +1,44 @@
+@import "./base.scss";
+
+.resume-hero {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .resume-circular-image {
+    background: #e6e3ed;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+} 
+
+.info {
+  display: flex;
+
+  .info-left {
+    width: 25%;
+  }
+
+  .info-right {
+    width: 75%;
+    .info-head {
+      font-size: 1em;
+      font-weight: 700;
+    } 
+  }
+}
+ 
+.task-list {
+  //line-height: .5;
+  p {
+    display: list-item;
+    list-style-position: inside;
+  }
+}

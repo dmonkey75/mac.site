@@ -10,15 +10,20 @@
     height: 90% !important;
     width: 60% !important;
   }
+  header .header-container nav {
+    font-size: 2em;
+  }
   header .header-container nav .nav-items {
     display: none;
   }
   header .header-container nav .nav-burger {
-    font-size: 2em;
     color: #fff;
     display: block;
   }
-  header .header-container nav:hover .nav-items {
+  header .header-container nav .nav-burger:hover {
+    color: green;
+  }
+  header .header-container nav .nav-items-responsive {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
