@@ -1,24 +1,11 @@
-import React from 'react'; 
-import Project1 from './portfolio/Project1'
-import Project3 from './portfolio/Project3'
-import ProjectPlain from './portfolio/ProjectPlain'
+import React from 'react';
 
-const Portfolio = () => {
+function Portfolio(props) {
     return (
         <div>
-            <div className='portfolio-hero'>
-                <h1>My Works</h1>
-            </div>
- 
-            <Project1 />
-            <div className='skew-ccw' />
-
-            <ProjectPlain />
-
-            <div className='skew-cw' /> 
-            <Project3 /> 
+            Portfolio page
         </div>
     );
-};
+}
 
 export default Portfolio;

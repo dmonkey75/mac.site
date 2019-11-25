@@ -1,11 +1,11 @@
 import React from 'react';
 
-const About = () => {
+function About(props) {
     return (
         <div>
-            Welcome to About page!
+            About page
         </div>
     );
-};
+}
 
 export default About;

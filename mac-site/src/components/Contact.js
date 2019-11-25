@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Resume(props) {
+function Contact(props) {
     return (
         <div>
-            Resume page
+            Contact page
         </div>
     );
 }
 
-export default Resume;
+export default Contact;
